@@ -18,9 +18,9 @@ This project leverages the power of GPT-4 to automate the creation and organizat
 
 The repository is organized as follows:
 
-- **CSV Files**: Contains data files (`persona_table.csv`, `interaction_details.csv`, `persona_knowledge.csv`) used for persona generation.
-- **Python Scripts**: Scripts to read data, generate personas, create directories, and populate them with detailed prompts and knowledge files.
-- **Visualization**: Scripts to create and display DAGs for various planning and review phases, highlighting continuous improvement and Six Sigma principles.
+- **CSV Files**: Contains data files (`persona_table.csv`, `interaction_details.csv`, `rasci_table.csv`) used for persona generation and visualization.
+- **Python Scripts**: Scripts to read data, generate personas, create directories, and populate them with detailed prompts.
+- **Visualization**: `grapher.py` creates DAGs from the CSV files to highlight continuous improvement and persona interactions.
 
 ## Getting Started
 
@@ -42,18 +42,18 @@ pip install pandas networkx matplotlib numpy
 
 ### Running the Scripts
 
-1. **Prepare Your Data**: Ensure your CSV files (`persona_table.csv`, `interaction_details.csv`, `persona_knowledge.csv`) are correctly formatted and located in the same directory as your scripts.
+1. **Prepare Your Data**: Ensure your CSV files (`persona_table.csv`, `interaction_details.csv`, `rasci_table.csv`) are correctly formatted and located in the same directory as your scripts.
 
-2. **Generate Personas**: Run the main script to generate detailed personas and populate the directories:
+2. **Generate Personas**: Run the prompt builder to generate detailed personas and populate the directories:
 
    ```bash
-   python promptbuilder.py
+   python simple_promptbuilder.py
    ```
 
-3. **Visualize Planning Phases**: Run the visualization script to create and display the DAGs for strategic planning and review phases:
+3. **Visualize Planning Phases**: Run the grapher script to create and display the DAG for strategic planning and review phases:
 
    ```bash
-   python visualize_dag.py
+   python grapher.py
    ```
 
 ## Project Files
@@ -66,17 +66,17 @@ Defines the basic details of each persona, including their roles, responsibiliti
 
 Details the interactions between personas, highlighting key points of collaboration and specific actions.
 
-### `persona_knowledge.csv`
+### `rasci_table.csv`
 
-Provides detailed knowledge areas, skills, tools, and responsibilities for each persona, enhancing their GPT capabilities.
+Defines RASCI responsibilities for core workflow steps.
 
-### `promptbuilder.py`
+### `simple_promptbuilder.py`
 
-The main script to generate personas, create directories, and populate them with detailed prompts and knowledge files.
+Lightweight script to generate personas and populate their prompts and RASCI details.
 
-### `visualize_dag.py`
+### `grapher.py`
 
-Script to create and display DAGs for various strategic planning and review phases, emphasizing continuous improvement and Six Sigma principles.
+Creates a DAG showing persona interactions and DMAIC phases, emphasizing continuous improvement principles.
 
 ## About
 
