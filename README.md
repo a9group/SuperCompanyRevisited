@@ -80,7 +80,7 @@ Script to create and display DAGs for various strategic planning and review phas
 
 ## About
 
-This project was generated with the assistance of GPT-4 by William Kennedy/A9 Consulting Group, an Atlassian Silver Partner. The goal is to streamline corporate persona creation and enhance their effectiveness using GPT capabilities.
+This project was generated with the assistance of GPT-4 by William Kennedy/A9 Consulting Group, a boutique consulting practice. The goal is to streamline corporate persona creation and enhance their effectiveness using GPT capabilities.
 
 ## License
 
@@ -90,13 +90,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - GPT-4 by OpenAI for assisting in the project generation.
 - Pandas, NetworkX, Matplotlib, and NumPy for their powerful data processing and visualization capabilities.
-- Atlassian for their comprehensive Partner program and tools that inspired this project.
 
 ---
 
 **William Kennedy**  
 *A9 Consulting Group*  
-*Atlassian Silver Partner*
 
 For more information, visit [A9 Consulting Group](https://www.a9consultinggroup.com).
 
